@@ -42,7 +42,7 @@ public class ExampleExceptionTest {
   public void testRectangleArea(int a, int b, int c) {
     // TODO put your code here
     assertEquals(ExampleException.rectangleArea(a,b), c,
-            "Calculations are correct");
+            "Calculations are incorrect");
   }
 
 
@@ -53,7 +53,7 @@ public class ExampleExceptionTest {
       ExampleException.rectangleArea(a, b);
       fail("test has failed");
     } catch (IllegalArgumentException e) {
-      assertEquals(e.getMessage(), "input value is below zero!");
+      assertEquals(e.getMessage(), ("input value is below zero!"));
     }
   }
 }
